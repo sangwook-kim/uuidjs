@@ -1,0 +1,32 @@
+{
+  "name": "uuid-js",
+  "version": "1.0.0",
+  "description": "UUID for javascript",
+  "scripts": {
+    "build": "rollup -c",
+    "pretest": "rollup -c",
+    "test": "jasmine",
+    "watch": "rollup -w -c &",
+    "prebuild": "npm run clean",
+    "clean": "rimraf dist && mkdirp dist"
+  },
+  "keywords": [
+    "UUID",
+    "javascript",
+    "ecma2015"
+  ],
+  "author": "sangwook-kim",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "jasmine": "^2.5.2",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.5.4",
+    "rollup": "^0.41.1",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-uglify": "^1.0.1",
+    "rollup-watch": "^3.1.0"
+  }
+}
